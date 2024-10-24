@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Eka Putri</title>
+
+    <!-- swipper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- box icon -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--header  -->
+    <header class="header">
+      <a href="#" class="logo">Eka Putri.</a>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="bx bx-moon" id="darkMode-icon"></div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I am</h3>
+        <h1>Eka Putri</h1>
+        <p>
+          Mahasiswa Sistem Informasi Fakultas Teknik dan Kejuruan, Universitas
+          Pendidikan Ganesha
+        </p>
+
+        <div class="social-media">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+        </div>
+
+        <a href="#about" class="btn">Read More</a>
+      </div>
+
+      <div class="profession-container">
+        <div class="profession-box">
+          <div class="profession" style="--i: 0">
+              <i class="bx bx-code-alt"></i>
+              <h3>Web Developer</h3>
+          </div>
+          <div class="profession" style="--i: 1">
+              <i class="bx bx-laptop"></i>
+              <h3>Software Engineer</h3>
+          </div>
+          <div class="profession" style="--i: 2">
+              <i class="bx bx-game"></i>
+              <h3>Game Developer</h3>
+          </div>
+          <div class="profession" style="--i: 3">
+              <i class="bx bx-bar-chart-alt-2"></i>
+              <h3>Data Scientist</h3>
+          </div>
+
+          <div class="circle"></div>
+        </div>
+
+        <div class="overlay"></div>
+      </div>
+      <div class="home-img">
+        <img src="img/human_logo.png" alt="" style="margin-right:132px;" />
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/aboutme_img.png" alt="" id=about_img style=width:30vw;/>
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Hi, Saya Eka Putri</h3>
+        <p>
+          Saat ini, saya adalah mahasiswa di Universitas Pendidikan Ganesha,
+          Fakultas Teknik dan Kejuruan, jurusan Teknik Informatika, Program
+          Studi Sistem Informasi. Saya memiliki minat besar dalam UI/UX Designer
+        </p>
+        <div class="info-grid" style="font-size: 1.6rem;">
+          <div class="info-item">
+            <span class="label">Agama:</span>
+            <span class="value">Hindu</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Bahasa:</span>
+            <span class="value">Indonesia</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Jenis Kelamin:</span>
+            <span class="value">Perempuan</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Phone:</span>
+            <span class="value">+6285858230833</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Umur:</span>
+            <span class="value">20 Tahun</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Email:</span>
+            <span class="value">putrijayanti889@gmail.com</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Pekerjaan:</span>
+            <span class="value">Mahasiswa</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Alamat:</span>
+            <span class="value">Ds. Tejakula, Buleleng, Bali</span>
+          </div>
+        </div>
+        <a href="" class="btn">Download CV</a>
+      </div>
+    </section>
+
+    <!-- CSS -->
+    <style>
+    .profile {
+      padding: 2rem;
+      background-color: #fff5f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .profile-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .profile h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .education {
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      color: #666;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-bottom: 2rem;
+      transition: all, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;
+      transform:matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    .info-item {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .label {
+      color: var(--main-color);
+      font-weight: bold;
+    }
+
+    .value {
+      color: #333;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn {
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn.download {
+      background-color: #e67e22;
+      color: white;
+    }
+
+    .btn.hire {
+      background-color: #e67e22;
+      color: white;
+    }
+
+    .btn:hover {
+      background-color: #d35400;
+      color:white;
+    }
+
+    @media (max-width: 768px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .button-group {
+        flex-direction: column;
+      }
+      #about_img{
+        display: none;
+      }
+    }
+    </style>
+
+    <section class="education" id="education">
+      <h2 class="heading">My <span>Education</span></h2>
+      <div class="education-container">
+        <!-- Add this wrapper -->
+        <div class="education-box">
+          <i class="bx bxs-graduation"></i>
+          <h3>SD Negeri 1 Tejakula</h3>
+          <p>2010-2017</p>
+          <p>Desa Tejakula, Buleleng, Bali</p>
+        </div>
+        <div class="education-box">
+          <i class="bx bxs-graduation"></i>
+          <h3>SMP Negeri 1 Tejakula</h3>
+          <p>2017-2019</p>
+          <p>Desa Tejakula, Buleleng, Bali</p>
+        </div>
+        <div class="education-box">
+          <i class="bx bxs-graduation"></i>
+          <h3>SMA Negeri 1 Tejakula</h3>
+          <p>2020-2023</p>
+          <!-- Fixed typo (removed "yu") -->
+          <p>Desa Tejakula, Buleleng, Bali</p>
+        </div>
+        <div class="education-box">
+          <i class="bx bxs-graduation"></i>
+          <h3>Universitas Pendidikan Ganesha</h3>
+          <p>2023-2026</p>
+          <p>Singaraja, Buleleng, Bali</p>
+        </div>
+      </div>
+    </section>
+
+    <style>
+        .experience-section {
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            color: var(--main-color);
+            font-size: 24px;
+            margin-bottom: 40px;
+            padding-left: 20px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--main-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 45px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 16px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background: var(--main-color);
+            border-radius: 50%;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .year-badge {
+            display: inline-block;
+            background: var(--main-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .timeline-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .timeline-org {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        /* Desktop Styles */
+        @media (min-width: 768px) {
+            .timeline::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .timeline-item {
+                width: 50%;
+                padding-left: 0;
+                margin-bottom: 50px;
+            }
+
+            .timeline-item:nth-child(odd) {
+                padding-right: 40px;
+            }
+
+            .timeline-item:nth-child(even) {
+                margin-left: 50%;
+                padding-left: 40px;
+            }
+
+            .timeline-dot {
+                left: auto;
+                right: -5px;
+            }
+
+            .timeline-item:nth-child(even) .timeline-dot {
+                right: auto;
+                left: -5px;
+            }
+        }
+    </style>
+
+    <section class="experience-section" id=experience>
+        <h2 class="heading">My <span>Experience</span></h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="year-badge">2024 - 2025</div>
+                    <h3 class="timeline-title">Anggota Divisi Pendidikan dan Penalaran</h3>
+                    <p class="timeline-org">POKJA Penalaran PTK</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="year-badge">2020</div>
+                    <h3 class="timeline-title">Koordinator Sie Perlengkapan</h3>
+                    <p class="timeline-org">Kegiatan Pelantikan Pandega, UKM Pramuka Racana Jelantik-Jempiring, Universitas Pendidikan Ganesha</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="year-badge">2024 - 2025</div>
+                    <h3 class="timeline-title">PIC Prodi Sistem Informasi</h3>
+                    <p class="timeline-org">Team SIMKATMAWA FTK</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="year-badge">2024 - 2025</div>
+                    <h3 class="timeline-title">Koordinator Sie Humas</h3>
+                    <p class="timeline-org">Kegiatan Monitoring Finalis PKM dan P2MW</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="year-badge">2021</div>
+                    <h3 class="timeline-title">Juara II</h3>
+                    <p class="timeline-org">Lomba Esai Tingkat Nasional Yang Diselenggarakan Oleh HIMABISI KIP-K Universitas Jenderal Soedirman</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="year-badge">2024</div>
+                    <h3 class="timeline-title">P2M SD Negeri 8 Busungbiu</h3>
+                    <p class="timeline-org">UKM PKIM UNDIKSHA</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="year-badge">2022</div>
+                    <h3 class="timeline-title">Gold Medal</h3>
+                    <p class="timeline-org">International IoT Olympiad (I3O) Diselenggarakan Di Universitas Muria Kudus</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="year-badge">2024</div>
+                    <h3 class="timeline-title">Anggota UKM PKIM</h3>
+                    <p class="timeline-org">Universitas Pendidikan Ganesha</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section" id="portfolio">
+        <div class="portfolio-title">
+            <h2 class="heading">My <span>Portfolio</span></h2>
+        </div>
+        <div class="title portfolio-grid" style="margin-bottom:20px;"># Project</div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="img/projek1.jpeg" alt="Portfolio item 1">
+                <div class="portfolio-overlay">
+                    <h3>Project pengembangan UI untuk Sistem Manajemen Asrama UNDIKSHA</h3>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/projek2.jpeg" alt="Portfolio item 2">
+                <div class="portfolio-overlay">
+                    <h3>Project UX Design Aplikasi Kamus Bahasa Isyarat</h3>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/projek3.jpeg" alt="Portfolio item 3">
+                <div class="portfolio-overlay">
+                    <h3>Project UI Design Aplikasi Kesehatan Mental</h3>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/projek5.jpeg" alt="Portfolio item 5">
+                <div class="portfolio-overlay">
+                    <h3>P2M SD Negeri 8 Busungbiu UKM PKIM UNDIKSHA</h3>
+                </div>
+            </div>
+        </div>
+        <div class="title portfolio-grid" style="margin-bottom:20px;margin-top: 30px;"># Sertifikasi</div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="img/sertifikat1.jpeg" alt="Portfolio item 1">
+                <div class="portfolio-overlay">
+                    <h3>Kegiatan LKMM-TD Fakultas Teknik dan Kejuruan</h3>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/sertifikat2.jpeg" alt="Portfolio item 2">
+                <div class="portfolio-overlay">
+                    <h3>Kelas Penulisan Esai UKM PKIM UNDIKSHA</h3>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/sertifikat3.jpeg" alt="Portfolio item 3">
+                <div class="portfolio-overlay">
+                    <h3>Sertifikasi SQL Basic HackerRank</h3>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/sertifikat4.jpeg" alt="Portfolio item 5">
+                <div class="portfolio-overlay">
+                    <h3>Sertifikasi JavaScript Dasar Skilvul</h3>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/sertifikat5.jpeg" alt="Portfolio item 5">
+                <div class="portfolio-overlay">
+                    <h3>Sertifikasi Phyton (Basic) HackerRank</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .portfolio-section {
+            padding: 2rem;
+        }
+
+        .portfolio-title {
+            margin-bottom: 100px;
+        }
+
+        .title{
+          font-size: 24px;
+          color:#333;
+          font-weight: bold;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            background: white;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            cursor: pointer;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-overlay h3 {
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 24px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1rem;
+            }
+
+            .portfolio-section {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="No Telepon" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Massage"
+        ></textarea>
+        <input type="submit" value="Send Massage" class="btn" />
+      </form>
+    </section>
+
+    <!-- foother design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Eka Putri | All Right Reserved</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- swipper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
