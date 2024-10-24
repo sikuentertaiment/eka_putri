@@ -36,7 +36,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -572,6 +572,10 @@ span {
     display: none;
   }
 
+  .profession-box{
+    display: none;
+  }
+
   .education,
   .experience {
     padding-bottom: 7rem;
@@ -659,6 +663,7 @@ span {
     left: 0;
     border-radius: 0;
     width: 100%;
+    display: none;
   }
 
   .home .profession-container .profession {
